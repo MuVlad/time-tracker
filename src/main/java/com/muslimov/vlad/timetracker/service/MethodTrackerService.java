@@ -14,7 +14,6 @@ public class MethodTrackerService {
 
     @Transactional
     public void saveMethodTracker(MethodTracker methodTracker) {
-        System.out.println("saveMethodTracker in thread " + Thread.currentThread().getName());
         methodTrackerRepository.save(methodTracker);
     }
 }

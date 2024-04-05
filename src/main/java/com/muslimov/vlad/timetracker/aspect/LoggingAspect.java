@@ -40,7 +40,6 @@ public class LoggingAspect {
     }
 
     private Object writeAndSaveLog(ProceedingJoinPoint proceedingJoinPoint) {
-        System.out.println("writeAndSaveLog in thread " + Thread.currentThread().getName());
 
         long startTime = System.currentTimeMillis();
 
